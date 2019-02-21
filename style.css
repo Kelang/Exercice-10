@@ -21,7 +21,7 @@
 
 .site-branding > .site-title{
 background-color: #464646;
-border-bottom: .2em solid #161616;
+border-bottom: .1em solid #161616;
 font-size: 2em;
 
 }
@@ -42,6 +42,7 @@ font-size: 2em;
     color: #252525;
     text-decoration: underline;
 }
+
 
 
 .entry .entry-content .wp-block-quote:not(.is-large), .entry .entry-content .wp-block-quote:not(.is-style-large){
@@ -95,4 +96,22 @@ input[type="reset"]:visited,
 input[type="submit"]:visited {
   color: #161616;
   text-decoration: none;
+}
+
+
+.entry .entry-content .wp-block-archives li a,
+.entry .entry-content .wp-block-categories li a,
+.entry .entry-content .wp-block-latest-posts li a {
+  color: #161616;
+}
+
+.entry .entry-content .wp-block-archives li a,
+.entry .entry-content .wp-block-categories li a,
+.entry .entry-content .wp-block-latest-posts li a:hover {
+  color: #252525;
+  text-decoration: underline;
+}
+
+.entry .entry-content .wp-block-latest-posts.is-grid li {
+  border-top-color: #5E5E5E;
 }
