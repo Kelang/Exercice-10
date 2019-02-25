@@ -115,3 +115,47 @@ input[type="submit"]:visited {
 .entry .entry-content .wp-block-latest-posts.is-grid li {
   border-top-color: #5E5E5E;
 }
+
+.main-title-animation{
+  animation: descend 1s forwards;
+}
+
+@keyframes descend{
+  0%{
+    transform: translateY(-2em);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0em);
+    opacity: 1;
+  }
+}
+
+.subtitle-animation{
+  animation: entrerGauche 1s forwards;
+}
+
+@keyframes entrerGauche{
+  0%{
+    transform: translateX(-2em);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0em);
+    opacity: 1;
+  }
+}
+
+.contenuAnim{
+  animation: monter 1s forwards;
+}
+@keyframes monter{
+  0%{
+    transform: translateY(2em);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0em);
+    opacity: 1;
+  }
+}
