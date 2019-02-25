@@ -17,10 +17,4 @@ window.addEventListener('load', function(){
     monContenu.classList.add("contenuAnim");
 
 
-  /*
-    let mainTitle = document.getElementsByClassName('site-title');
-    let subtitle = document.getElementsByClassName('site-description');
-    mainTitle.classList.add('main-title-animation');
-    subtitle.classList.add('subtitle-animation');
-*/
 });
