@@ -9,9 +9,9 @@ wp_enqueue_style ( $parent_style, get_template_directory_uri() .'/style.css' );
 
 wp_enqueue_style(
 'twentynineteen-style-enfant',
-get_stylesheet_directory_uri() .'./sass/style.css',
+get_stylesheet_directory_uri() .'./style.css',
 array(),
-filemtime( get_stylesheet_directory() .'./sass/style.css' )
+filemtime( get_stylesheet_directory() .'./style.css' )
 );
 
 

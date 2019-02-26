@@ -1,53 +1,48 @@
+
 .site-branding {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.site-branding > .site-title {
-  background-color: #464646;
-  border-bottom: .1em solid #161616;
-  font-size: 2em;
+.site-branding > .site-title{
+background-color: #464646;
+border-bottom: .1em solid #161616;
+font-size: 2em;
+
 }
 
 .site-title a:hover {
-  color: #252525;
-}
+    color: #252525;
+  }
 
 .widget a {
-  color: #161616;
+    color: #161616;
 }
 
-.widget a:visited {
-  color: #161616;
+.widget a:visited{
+    color: #161616;
 }
 
-.widget a:hover {
-  color: #252525;
-  text-decoration: underline;
+.widget a:hover{
+    color: #252525;
+    text-decoration: underline;
 }
 
-.entry .entry-content .wp-block-quote:not(.is-large), .entry .entry-content .wp-block-quote:not(.is-style-large) {
-  border-left-color: #161616;
+
+
+.entry .entry-content .wp-block-quote:not(.is-large), .entry .entry-content .wp-block-quote:not(.is-style-large){
+    border-left-color: #161616;
 }
 
-.etiquette-image {
-  border: 1em solid #161616;
-  background-color: #161616;
+.etiquette-image{
+    border: 1em solid #161616;
+    background-color: #161616;
 }
 
-#page {
-  background-color: #464646;
+#page{
+    background-color: #464646;
 }
 
 /* Forms */
@@ -56,13 +51,11 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-transition: background 150ms ease-in-out;
   transition: background 150ms ease-in-out;
   background: #161616;
   border: none;
   border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 0.88889em;
@@ -92,6 +85,7 @@ input[type="submit"]:visited {
   text-decoration: none;
 }
 
+
 .entry .entry-content .wp-block-archives li a,
 .entry .entry-content .wp-block-categories li a,
 .entry .entry-content .wp-block-latest-posts li a {
@@ -108,4 +102,4 @@ input[type="submit"]:visited {
 .entry .entry-content .wp-block-latest-posts.is-grid li {
   border-top-color: #5E5E5E;
 }
-/*# sourceMappingURL=layout.css.map */
+
