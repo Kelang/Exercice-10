@@ -13,8 +13,7 @@
 */
 
 @import "sass/animation/animation";
-
-
+@import "mixins/utilities";
 
 .site-branding {
     display: flex;
@@ -120,3 +119,31 @@ input[type="submit"]:visited {
   border-top-color: #5E5E5E;
 }
 
+
+
+
+.site-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+}
+
+.site-main > header {
+    margin-bottom: 0;
+}
+
+.site-main > article{
+    margin-top: 0;
+}
+
+.site-main header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+@media (mobile){
+    body{
+        background: yellow;
+    }
+}
