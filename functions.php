@@ -3,14 +3,15 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 /* Permet d'adapter la requête principale avant qu'elle ne s'exécute */
 function extraire_cours( $query ) {
-    if ($query->is_category('cours'))
-    {
-       $query->set( 'posts_per_page', -1 );
-       $query->set( 'orderby', 'title' );
-       $query->set( 'order', 'asc' );
-    }
- }
- add_action( 'pre_get_posts', 'extraire_cours' );
+   if ($query->is_category('cours'))
+   {
+      $query->set( 'posts_per_page', -1 );
+      $query->set( 'orderby', 'title' );
+      $query->set( 'order', 'asc' );
+   }
+}
+
+add_action( 'pre_get_posts', 'extraire_cours' );
 
 function my_theme_enqueue_styles() {
 
@@ -31,13 +32,6 @@ wp_enqueue_script(
     get_stylesheet_directory_uri() . '/js/animation.js',
     array(),
     filemtime( get_stylesheet_directory() . '/js/animation.js' )
-);
-
-wp_enqueue_script(
-    'order',
-    get_stylesheet_directory_uri() . '/js/order.js',
-    array(),
-    filemtime( get_stylesheet_directory() . '/js/order.js' )
 );
 
 }

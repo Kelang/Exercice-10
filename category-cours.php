@@ -26,6 +26,8 @@ get_header();
 			<?php
 			// Start the Loop.
 			while ( have_posts() ) :
+
+				
 				the_post();
 
 				/*
@@ -37,6 +39,8 @@ get_header();
 
 				// End the loop.
 			endwhile;
+
+			
 
 			// Previous/next page navigation.
 			twentynineteen_the_posts_navigation();
