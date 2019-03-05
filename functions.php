@@ -8,6 +8,7 @@ function extraire_cours( $query ) {
       $query->set( 'posts_per_page', -1 );
       $query->set( 'orderby', 'title' );
       $query->set( 'order', 'asc' );
+      
    }
 }
 
