@@ -270,8 +270,8 @@ input[type="submit"]:visited {
 .site-main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-row-gap: 0em;
 }
 
@@ -282,6 +282,9 @@ input[type="submit"]:visited {
 .site-main > article {
   margin-top: 0;
   font-size: 10px;
+}
+
+.site-main > article a {
   width: auto;
 }
 
@@ -295,23 +298,24 @@ input[type="submit"]:visited {
   .site-main {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 0em;
   }
-  .site-main header {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 6;
+  .site-main > article {
+    margin-top: 0;
+    font-size: 10px;
+    height: auto;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .site-main {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 0em;
   }
 }
 /*# sourceMappingURL=style.css.map */

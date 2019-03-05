@@ -16,7 +16,7 @@
 		<?php
 		$monTitre = get_the_title($post);
 		$noSession = substr($monTitre,4,1);
-		echo($noSession);
+		
 		the_title( sprintf( '<h2 class="entry-title, session%s"><a href="%s1" rel="bookmark">', $noSession, esc_url( get_permalink() ) ), '</a></h2>' );
 		?>
 	</header><!-- .entry-header -->
